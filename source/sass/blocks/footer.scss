@@ -1,0 +1,132 @@
+.footer {
+  background-color: $color-black-russian;
+
+  a {
+    color: $color-default-white;
+  }
+}
+
+.footer__container {
+  padding-top: 42px;
+  padding-bottom: 35px;
+  display: flex;
+
+  @include vp-1199 {
+    padding-top: 45px;
+  }
+
+  @include vp-767 {
+    padding-bottom: 5px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    column-gap: 31px;
+  }
+}
+
+.footer__home-link {
+  margin-top: 6px;
+  margin-right: 278px;
+  letter-spacing: 0.02em;
+  font-size: 26px;
+  text-transform: uppercase;
+
+  @include vp-1199 {
+    margin-right: 56px;
+    margin-top: 0;
+  }
+
+  @include vp-767 {
+    font-size: 20px;
+    height: fit-content;
+    order: 0;
+  }
+}
+
+.footer__nav-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 40px;
+
+  @include vp-1199 {
+    gap: 30px;
+  }
+
+  @include vp-767 {
+    gap: 15px;
+    flex-direction: column;
+  }
+}
+
+.footer__nav-list:nth-child(1) {
+  @include vp-767 {
+    height: fit-content;
+    order: 2;
+  }
+}
+
+.footer__nav-list:nth-child(2) {
+  @include vp-767 {
+    height: fit-content;
+    order: 1;
+    margin-top: -64px;
+  }
+}
+
+.footer__nav-list + .footer__nav-list {
+  margin-left: 40px;
+
+  @include vp-1199 {
+    margin-left: 31px;
+  }
+
+  @include vp-767 {
+    margin-left: unset;
+  }
+}
+
+.footer__nav-item {
+  list-style-type: none;
+}
+
+.footer__nav-link {
+  font-size: 14px;
+  padding: 5px 0;
+  font-family: $font-roboto-condensed-sans-serif;
+
+  @include vp-767 {
+    font-size: 16px;
+  }
+}
+
+.footer__nav-link:hover {
+  text-decoration: underline;
+}
+
+.footer__nav-link:focus {
+  outline: 1px solid $color-default-white;
+  outline-offset: 3px;
+}
+
+.footer__nav-link:active {
+  text-decoration: none;
+}
+
+.footer__nav-link:disabled {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.footer__socials {
+  margin-left: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+
+  @include vp-767 {
+    margin-top: -72px;
+    height: fit-content;
+    grid-column: 1 / -1;
+    margin-left: unset;
+    order: 3;
+  }
+}

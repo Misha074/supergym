@@ -1,0 +1,101 @@
+.coach-card:hover {
+  .coach-card__image-mask {
+    opacity: 0.89;
+  }
+
+  .coach-card__text-wrapper {
+    padding-top: 52px;
+    top: 0;
+
+    @include vp-767 {
+      padding-top: 42px;
+    }
+  }
+
+  .coach-card__name {
+    margin-bottom: -4px;
+  }
+
+  .coach-card__info {
+    opacity: 1;
+    display: block;
+  }
+}
+
+.coach-card__image-wrapper {
+  position: relative;
+
+  img {
+    width: 100%;
+
+    @include vp-1199 {
+      aspect-ratio: 268/294;
+    }
+
+    @include vp-767 {
+      aspect-ratio: 228 / 276;
+    }
+  }
+}
+
+.coach-card__image-mask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: $color-sapphire;
+  opacity: 0;
+  transition: $trans-default;
+}
+
+.coach-card__text-wrapper {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  padding-top: 0;
+  transition: $trans-default;
+  bottom: 0;
+
+  color: $color-default-white;
+  font-family: $font-roboto-condensed-sans-serif;
+}
+
+.coach-card__name {
+  margin: 0;
+  margin-bottom: 22px;
+
+  font-size: 18px;
+  line-height: 1.5em;
+  font-weight: 700;
+}
+
+.coach-card__info {
+  opacity: 0;
+  display: none;
+  transition: $trans-default;
+}
+
+.coach-card__discipline {
+  margin: 0;
+  margin-bottom: 33px;
+}
+
+.coach-card__achievements-list {
+  padding: 0 20px 0 71px;
+  text-align: start;
+  font-size: 14px;
+  line-height: 1.5em;
+
+  @include vp-767 {
+    padding-left: 51px;
+  }
+}
+
+.coach-card__achievement-item {
+  list-style-type: disc;
+}
+
+.coach-card__achievement-item + .coach-card__achievement-item {
+  margin-top: 13px;
+}

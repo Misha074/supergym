@@ -1,0 +1,40 @@
+.socials {
+  padding: 0;
+  display: flex;
+  gap: 11px;
+}
+
+.socials__item {
+  list-style-type: none;
+}
+
+.socials__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: $color-default-white;
+
+  svg {
+    color: $color-black-russian;
+  }
+}
+
+.socials__link:hover,
+.socials__link:focus-within {
+  background-color: $color-egyptian-blue;
+
+  svg {
+    color: $color-default-white;
+  }
+}
+
+.socials__link:active {
+  background-color: $color-sapphire;
+
+  svg {
+    color: $color-default-white;
+  }
+}

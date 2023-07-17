@@ -1,0 +1,26 @@
+.nav__list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 40px;
+
+  @include vp-1199 {
+    gap: 30px;
+  }
+}
+
+.nav__list + .nav__list {
+  margin-left: 40px;
+
+  @include vp-1199 {
+    margin-left: 30px;
+  }
+}
+
+.nav__item {
+  list-style-type: none;
+  display: flex;
+  font-family: $font-roboto-condensed-sans-serif;
+  font-size: 14px;
+  letter-spacing: 0;
+}

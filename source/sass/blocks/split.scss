@@ -1,0 +1,12 @@
+.split {
+  background: linear-gradient(90deg, $color-sapphire 0%, $color-sapphire 50%, $color-default-white 50%, $color-default-white 100%);
+}
+
+.split__container {
+  display: grid;
+  grid-template-columns: 50% 50%;
+
+  @include vp-1199 {
+    display: block;
+  }
+}

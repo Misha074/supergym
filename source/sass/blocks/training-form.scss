@@ -1,0 +1,97 @@
+.training-form {
+  color: $color-default-white;
+  background-color: $color-sapphire;
+}
+
+.training-form__container {
+  padding: 64px 170px 63px clamp(30px, $padding-desktop * 2, 170px);
+
+  @include vp-1199 {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 61px 133px 68px;
+  }
+
+  @include vp-767 {
+    padding: 63px clamp(15px, $padding-mobile, 45px) 68px;
+  }
+}
+
+.training-form__title {
+  margin: 0;
+  margin-bottom: 28px;
+
+  font-weight: 900;
+  letter-spacing: 0.03em;
+  line-height: normal;
+
+  @include vp-1199 {
+    letter-spacing: 0.02em;
+    margin-bottom: 33px;
+  }
+
+  @include vp-767 {
+    font-weight: 600;
+    letter-spacing: 0.03em;
+  }
+}
+
+.training-form__form-wrapper {
+  input {
+    width: 100%;
+    padding: 5px 0;
+    box-sizing: border-box;
+    border: none;
+    background: none;
+    border-bottom: 1px solid $color-light-slate-grey;
+    color: $color-default-white;
+    font-family: $font-roboto-condensed-sans-serif;
+    font-size: 14px;
+  }
+
+  input::placeholder {
+    color: $color-default-white;
+    opacity: 1;
+  }
+
+  input:invalid {
+    outline-color: $color-torch-red;
+  }
+}
+
+.training-form__row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  margin-bottom: 28px;
+
+  @include vp-1199 {
+    margin-bottom: 28px;
+    gap: 45px;
+  }
+
+  @include vp-767 {
+    grid-template-columns: 1fr;
+    gap: 36px;
+    margin-bottom: 37px;
+  }
+}
+
+.training-form__button {
+  color: $color-default-white;
+  border: 3px solid $color-default-white;
+  padding: 19px 164px;
+  font-size: 14px;
+  font-weight: 700;
+
+  @include vp-1199 {
+    width: 94%;
+    padding: 19px 194px;
+  }
+
+  @include vp-767 {
+    width: 100%;
+    justify-content: center;
+    padding: 19px 100px;
+  }
+}
