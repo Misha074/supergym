@@ -1,0 +1,16 @@
+.infrastructure {
+  padding: 0;
+  list-style-type: none;
+  text-align: end;
+}
+
+.infrastructure__item {
+  line-height: 21px;
+}
+
+.infrastructure__link {
+  font-family: $font-roboto-condensed-sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  color: $color-default-white;
+}
