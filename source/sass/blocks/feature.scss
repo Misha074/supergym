@@ -14,20 +14,6 @@
   color: $color-default-white;
   text-align: center;
 
-  @include vp-1199 {
-    grid-column: 1 / 4;
-    width: 442px;
-    margin: -40px auto 0;
-    padding: 45px 130px 40px;
-  }
-
-  @include vp-767 {
-    width: calc(100% + (clamp(15px, $padding-mobile, 45px) * 2));
-    margin: 0;
-    padding: 50px 70px;
-    margin-left: calc(-1 * clamp(15px, $padding-mobile, 45px));
-  }
-
   .feature__number {
     color: $color-default-white;
     margin-bottom: -12px;
@@ -35,11 +21,12 @@
 
     @include vp-1199 {
       font-size: 74px;
+      padding-top: 10px;
       margin-bottom: -21px;
     }
 
-    @include vp-1199 {
-      padding-top: 10px;
+    @include vp-767 {
+      padding-top: 15px;
       margin-bottom: -26px;
     }
   }
@@ -54,7 +41,7 @@
 
     @include vp-1199 {
       font-size: 22px;
-      margin-bottom: 17px;
+      margin-bottom: 12px;
     }
 
     @include vp-767 {
@@ -86,6 +73,10 @@
   @include vp-1199 {
     font-size: 58px;
   }
+
+  @include vp-767 {
+    margin-top: -46px;
+  }
 }
 
 .feature__number-description {
@@ -97,7 +88,7 @@
 }
 
 .feature__text-title {
-  margin: -20px 0 5px 30px;
+  margin: -19px 0 5px 30px;
   font-size: 22px;
   line-height: 33px;
   font-weight: 700;

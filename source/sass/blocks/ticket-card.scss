@@ -1,6 +1,6 @@
 .ticket-card {
   background-color: $color-default-white;
-  padding: 56px 71px 61px;
+  padding: 56px 50px 61px;
   width: 100%;
   border: 7px solid transparent;
 
@@ -106,10 +106,10 @@
   outline: 2px solid $color-sapphire;
   padding: 25px 40px;
   width: 100%;
+  max-width: 206px;
   justify-content: center;
 
   @include vp-767 {
     padding: 25px 43px;
   }
 }
-

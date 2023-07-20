@@ -4,7 +4,7 @@
 }
 
 .training-form__container {
-  padding: 64px 170px 63px clamp(30px, $padding-desktop * 2, 170px);
+  padding: 65px 170px 63px clamp(30px, $padding-desktop * 2, 170px);
 
   @include vp-1199 {
     max-width: 800px;
@@ -22,7 +22,7 @@
   margin-bottom: 28px;
 
   font-weight: 900;
-  letter-spacing: 0.03em;
+  letter-spacing: 0.02em;
   line-height: normal;
 
   @include vp-1199 {

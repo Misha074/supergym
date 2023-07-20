@@ -37,22 +37,12 @@
 
   @include vp-1199 {
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 211px;
+    grid-template-rows: 1fr auto;
     gap: 30px;
   }
 
   @include vp-767 {
     grid-template-columns: 1fr;
-  }
-}
-
-.promotions__item:nth-child(2) {
-  @include vp-1199 {
-    padding-right: 50px;
-  }
-
-  @include vp-767 {
-    padding-right: 0;
   }
 }
 

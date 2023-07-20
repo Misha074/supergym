@@ -2,6 +2,8 @@
   padding: 0;
   display: flex;
   gap: 11px;
+  max-width: 250px;
+  flex-wrap: wrap;
 }
 
 .socials__item {

@@ -5,10 +5,7 @@
   border-image-slice: 1;
   color: $color-resolution-blue;
   font-family: $font-roboto-condensed-sans-serif;
-
-  @include vp-767 {
-    min-height: 211px;
-  }
+  min-height: 211px;
 }
 
 .promcard--special {
@@ -96,6 +93,16 @@
         height: auto;
       }
     }
+  }
+}
+
+.promcard--short {
+  @include vp-1199 {
+    padding-right: 50px;
+  }
+
+  @include vp-767 {
+    padding-right: 0;
   }
 }
 

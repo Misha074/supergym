@@ -43,7 +43,15 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
+  svg {
+    @include vp-767 {
+      width: 10px;
+      height: 19px;
+    }
+  }
 }
+
 
 .btn--slider:hover,
 .btn--slider:focus {
@@ -60,4 +68,3 @@
   background-color: transparent;
   border: none;
 }
-
