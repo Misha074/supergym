@@ -7,7 +7,7 @@
   font-family: $font-roboto-condensed-sans-serif;
 
   @include vp-1199 {
-    padding-top: 105px;
+    padding-top: 103px;
     padding-bottom: 183px;
     display: flex;
     flex-direction: column;
@@ -15,7 +15,7 @@
   }
 
   @include vp-767 {
-    padding-top: 67px;
+    padding-top: 65px;
     padding-bottom: 70px;
   }
 }
@@ -36,8 +36,7 @@
 
 .gym__title {
   font-size: 48px;
-  margin: 0;
-  margin-bottom: 11px;
+  margin: 2px 0 9px;
   letter-spacing: 0.03em;
   font-family: $font-alumni-sans-serif;
 
@@ -49,7 +48,7 @@
 
   @include vp-767 {
     font-size: 32px;
-    margin-bottom: 7px;
+    margin-bottom: 8px;
   }
 }
 
@@ -64,7 +63,7 @@
   }
 
   @include vp-767 {
-    margin-bottom: 26px;
+    margin-bottom: 24px;
   }
 }
 
@@ -79,7 +78,7 @@
 
   @include vp-767 {
     padding-right: 35px;
-    margin-bottom: 32px;
+    margin-bottom: 33px;
     max-width: none;
   }
 
@@ -88,7 +87,7 @@
     margin-bottom: 8px;
   }
 
-  p:nth-child(2) {
+  p:nth-child(2n) {
     @include vp-1199 {
       display: none;
     }
@@ -97,6 +96,7 @@
 
 .gym__media-wrapper {
   position: relative;
+  height: fit-content;
 
   @include vp-767 {
     width: calc(100% + (clamp(15px, $padding-mobile, 45px) * 2));

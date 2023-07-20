@@ -46,8 +46,11 @@
 .footer__nav-list {
   margin: 0;
   padding: 0;
+  padding-top: 1px;
   display: flex;
+  flex-wrap: wrap;
   gap: 40px;
+  max-width: 350px;
 
   @include vp-1199 {
     gap: 30px;
@@ -59,18 +62,11 @@
   }
 }
 
-.footer__nav-list:nth-child(1) {
-  @include vp-767 {
-    height: fit-content;
-    order: 2;
-  }
-}
-
-.footer__nav-list:nth-child(2) {
+.footer__nav-list:first-of-type {
   @include vp-767 {
     height: fit-content;
     order: 1;
-    margin-top: -64px;
+    margin-top: -66px;
   }
 }
 
@@ -123,7 +119,7 @@
   margin-bottom: 0;
 
   @include vp-767 {
-    margin-top: -72px;
+    margin-top: -74px;
     height: fit-content;
     grid-column: 1 / -1;
     margin-left: unset;
