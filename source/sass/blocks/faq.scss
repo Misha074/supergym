@@ -92,7 +92,7 @@
     padding: 27px 0 23px;
 
     @include vp-1199 {
-      padding: 25px 0 23px;
+      padding: 25px 0 26px;
     }
 
     @include vp-767 {
@@ -106,7 +106,11 @@
 
   .accordion__element.is-active {
     .accordion__button {
-      margin-bottom: 8px;
+      margin-bottom: 9px;
+
+      @include vp-767 {
+        margin-bottom: 11px;
+      }
     }
 
     .accordion__element-icon-wrapper {
@@ -142,7 +146,6 @@
 
     p {
       margin: 0;
-      margin-bottom: 4px;
       text-align: start;
       line-height: 1.2em;
 
@@ -170,12 +173,26 @@
     border-radius: 50%;
     color: $color-resolution-blue;
     border: 1px solid $color-resolution-blue;
+    margin-top: -2px;
 
     @include vp-767 {
+      margin-top: -3px;
       min-width: 32px;
       width: 32px;
       max-width: 32px;
       height: 32px;
+    }
+
+    svg {
+      @include vp-767 {
+        width: 12px;
+      }
+    }
+
+    svg:first-of-type {
+      @include vp-767 {
+        height: 12px;
+      }
     }
   }
 
@@ -202,16 +219,16 @@
 
 .faq__container {
   padding-top: 126px;
-  padding-bottom: 115px;
+  padding-bottom: 122px;
 
   @include vp-1199 {
     padding-top: 105px;
-    padding-bottom: 101px;
+    padding-bottom: 98px;
   }
 
   @include vp-767 {
     padding-top: 74px;
-    padding-bottom: 62px;
+    padding-bottom: 68px;
   }
 }
 
