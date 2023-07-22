@@ -5,6 +5,8 @@
 .split__container {
   display: grid;
   grid-template-columns: 50% 50%;
+  max-width: 1366px;
+  margin: 0 auto;
 
   @include vp-1199 {
     display: block;

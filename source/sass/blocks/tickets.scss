@@ -96,6 +96,8 @@
 }
 
 .tickets__cards-list {
+  position: absolute;
+  z-index: 1;
   padding: 0;
   margin: 0;
   display: grid;
@@ -113,6 +115,7 @@
 }
 
 .tickets__image-wrapper {
+  z-index: 0;
   position: absolute;
   right: -183px;
   bottom: -150px;
