@@ -56,7 +56,7 @@
             <div class="header__main-info">
               <h1 class="header__title">Фитнес<br>центр</h1>
               <h2 class="header__suptitle">Омск</h2>
-              <a class="header__abonements-link" id="buy-ticket" href="#">Купить абонемент</a>
+              <a class="header__abonements-link" href="#buy-ticket'" id="buy-ticket">Купить абонемент</a>
             </div>
           </div>
           <div class="header__photo-wrapper">
@@ -276,7 +276,7 @@
               <source media="(min-width: 768px)"
                 srcset="img/gym-games-photo-tablet.webp 1x, img/gym-games-photo-tablet@2x.webp 2x">
               <source srcset="img/gym-games-photo-mobile.webp 1x, img/gym-games-photo-mobile@2x.webp 2x">
-              <img width="660" height="550" src="./img/gym-games-photo-desktop.webp"
+              <img width="660" height="500" src="./img/gym-games-photo-desktop.webp"
                 alt="Мужчина с голым торсом стоит в упоре лёжа. Вокруг него белое облако магнезии" loading="lazy">
             </picture>
           </div>
@@ -639,13 +639,13 @@
               </div>
               <div class="promcard__image-wrapper">
                 <picture>
-                  <source media="(max-width: 755px)"
-                    srcset="img/special-offer-photo-mobile.webp 1x, img/special-offer-photo-mobile@2x.webp 2x">
-                  <source media="(max-width: 1199px)"
+                  <source media="(min-width: 1200px)"
+                    srcset="img/special-offer-photo-desktop.webp 1x, img/special-offer-photo-desktop.webp 2x">
+                  <source media="(min-width: 768px)"
                     srcset="img/special-offer-photo-tablet.webp 1x, img/special-offer-photo-tablet@2x.webp 2x">
-                  <source srcset="img/special-offer-photo-desktop.webp 1x, img/special-offer-photo-desktop@2x.webp 2x">
+                  <source srcset="img/special-offer-photo-mobile.webp 1x, img/special-offer-photo-mobile@2x.webp 2x">
                   <img width="280" height="462" src="./img/special-offer-photo-desktop.webp"
-                    alt="Девушка в синих тренировочных лосинах и бра" loading="lazy">
+                  alt="Девушка в синих тренировочных лосинах и бра" loading="lazy">
                 </picture>
               </div>
             </li>
@@ -689,9 +689,9 @@
                 <div class="accordion" data-accordion="parent" data-single="data-single">
                   <div class="accordion__element" data-accordion="element">
                     <button class="accordion__button btn" type="button" data-accordion="button">
-                      <p>
+                      <span class="accordion__button-title">
                         Как стать членом фитнес-центра?
-                      </p>
+                      </span>
                       <span class="accordion__element-icon-wrapper">
                         <svg width="18" height="18" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
                           <use xlink:href="./img/sprite.svg#plus-icon"></use>
@@ -712,9 +712,9 @@
                   </div>
                   <div class="accordion__element" data-accordion="element">
                     <button class="accordion__button btn" type="button" data-accordion="button">
-                      <p>
+                      <span class="accordion__button-title">
                         Где можно посмотреть расписание?
-                      </p>
+                      </span>
                       <span class="accordion__element-icon-wrapper">
                         <svg width="18" height="18" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
                           <use xlink:href="./img/sprite.svg#plus-icon"></use>
@@ -732,9 +732,9 @@
                   </div>
                   <div class="accordion__element" data-accordion="element">
                     <button class="accordion__button btn" type="button" data-accordion="button">
-                      <p>
+                      <span class="accordion__button-title">
                         Есть кулеры в&nbsp;центре? Предоставляются полотенца?
-                      </p>
+                      </span>
                       <span class="accordion__element-icon-wrapper">
                         <svg width="18" height="18" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
                           <use xlink:href="./img/sprite.svg#plus-icon"></use>
@@ -752,9 +752,9 @@
                   </div>
                   <div class="accordion__element" data-accordion="element">
                     <button class="accordion__button btn" type="button" data-accordion="button">
-                      <p>
+                      <span class="accordion__button-title">
                         Сколько тренеров работает в&nbsp;клубе и&nbsp;какова их&nbsp;квалификация?
-                      </p>
+                      </span>
                       <span class="accordion__element-icon-wrapper">
                         <svg width="18" height="18" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
                           <use xlink:href="./img/sprite.svg#plus-icon"></use>
@@ -776,9 +776,9 @@
                 <div class="accordion" data-accordion="parent" data-single="data-single">
                   <div class="accordion__element" data-accordion="element">
                     <button class="accordion__button btn" type="button" data-accordion="button">
-                      <p>
+                      <span class="accordion__button-title">
                         Занятия с&nbsp;тренером входят в&nbsp;абонемент?
-                      </p>
+                      </span>
                       <span class="accordion__element-icon-wrapper">
                         <svg width="18" height="18" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
                           <use xlink:href="./img/sprite.svg#plus-icon"></use>
@@ -799,9 +799,9 @@
                   </div>
                   <div class="accordion__element" data-accordion="element">
                     <button class="accordion__button btn" type="button" data-accordion="button">
-                      <p>
+                      <span class="accordion__button-title">
                         Можно&nbsp;ли заморозить абонемент?
-                      </p>
+                      </span>
                       <span class="accordion__element-icon-wrapper">
                         <svg width="18" height="18" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
                           <use xlink:href="./img/sprite.svg#plus-icon"></use>
@@ -822,9 +822,9 @@
                   </div>
                   <div class="accordion__element" data-accordion="element">
                     <button class="accordion__button btn" type="button" data-accordion="button">
-                      <p>
+                      <span class="accordion__button-title">
                         Есть&nbsp;ли лимит по&nbsp;посещениям тренажерного зала и&nbsp;групповых занятий?
-                      </p>
+                      </span>
                       <span class="accordion__element-icon-wrapper">
                         <svg width="18" height="18" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
                           <use xlink:href="./img/sprite.svg#plus-icon"></use>
@@ -845,9 +845,9 @@
                   </div>
                   <div class="accordion__element" data-accordion="element">
                     <button class="accordion__button btn" type="button" data-accordion="button">
-                      <p>
+                      <span class="accordion__button-title">
                         Что такое семейный доступ и&nbsp;доступ для друзей?
-                      </p>
+                      </span>
                       <span class="accordion__element-icon-wrapper">
                         <svg width="18" height="18" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
                           <use xlink:href="./img/sprite.svg#plus-icon"></use>
@@ -872,9 +872,9 @@
                 <div class="accordion" data-accordion="parent" data-single="data-single">
                   <div class="accordion__element" data-accordion="element">
                     <button class="accordion__button btn" type="button" data-accordion="button">
-                      <p>
+                      <span class="accordion__button-title">
                         Предлагает&nbsp;ли клуб услуги по&nbsp;консультированию по&nbsp;вопросам питания?
-                      </p>
+                      </span>
                       <span class="accordion__element-icon-wrapper">
                         <svg width="18" height="18" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
                           <use xlink:href="./img/sprite.svg#plus-icon"></use>
@@ -894,9 +894,9 @@
                   </div>
                   <div class="accordion__element" data-accordion="element">
                     <button class="accordion__button btn" type="button" data-accordion="button">
-                      <p>
+                      <span class="accordion__button-title">
                         Проводятся&nbsp;ли в&nbsp;клубе какие-либо мероприятия или соревнования?
-                      </p>
+                      </span>
                       <span class="accordion__element-icon-wrapper">
                         <svg width="18" height="18" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
                           <use xlink:href="./img/sprite.svg#plus-icon"></use>
@@ -915,9 +915,9 @@
                   <div class="accordion__element" data-accordion="element">
                     <button class="accordion__button accordion__button--long-inner btn" type="button"
                       data-accordion="button">
-                      <p>
+                      <span class="accordion__button-title">
                         Можно&nbsp;ли приобрести в&nbsp;центре спортивное питание?
-                      </p>
+                      </span>
                       <span class="accordion__element-icon-wrapper">
                         <svg width="18" height="18" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
                           <use xlink:href="./img/sprite.svg#plus-icon"></use>
@@ -935,9 +935,9 @@
                   </div>
                   <div class="accordion__element" data-accordion="element">
                     <button class="accordion__button btn" type="button" data-accordion="button">
-                      <p>
+                      <span class="accordion__button-title">
                         Есть&nbsp;ли в&nbsp;центре детская комната?
-                      </p>
+                      </span>
                       <span class="accordion__element-icon-wrapper">
                         <svg width="18" height="18" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
                           <use xlink:href="./img/sprite.svg#plus-icon"></use>
@@ -959,9 +959,9 @@
                 <div class="accordion" data-accordion="parent" data-single="data-single">
                   <div class="accordion__element" data-accordion="element">
                     <button class="accordion__button btn" type="button" data-accordion="button">
-                      <p>
+                      <span class="accordion__button-title">
                         Правила вопрос&nbsp;1
-                      </p>
+                      </span>
                       <span class="accordion__element-icon-wrapper">
                         <svg width="18" height="18" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
                           <use xlink:href="./img/sprite.svg#plus-icon"></use>
@@ -979,9 +979,9 @@
                   </div>
                   <div class="accordion__element" data-accordion="element">
                     <button class="accordion__button btn" type="button" data-accordion="button">
-                      <p>
+                      <span class="accordion__button-title">
                         Правила вопрос&nbsp;2
-                      </p>
+                      </span>
                       <span class="accordion__element-icon-wrapper">
                         <svg width="18" height="18" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
                           <use xlink:href="./img/sprite.svg#plus-icon"></use>
@@ -999,9 +999,9 @@
                   </div>
                   <div class="accordion__element" data-accordion="element">
                     <button class="accordion__button btn" type="button" data-accordion="button">
-                      <p>
+                      <span class="accordion__button-title">
                         Правила вопрос&nbsp;3
-                      </p>
+                      </span>
                       <span class="accordion__element-icon-wrapper">
                         <svg width="18" height="18" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
                           <use xlink:href="./img/sprite.svg#plus-icon"></use>
@@ -1019,9 +1019,9 @@
                   </div>
                   <div class="accordion__element" data-accordion="element">
                     <button class="accordion__button btn" type="button" data-accordion="button">
-                      <p>
+                      <span class="accordion__button-title">
                         Правила вопрос&nbsp;4
-                      </p>
+                      </span>
                       <span class="accordion__element-icon-wrapper">
                         <svg width="18" height="18" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
                           <use xlink:href="./img/sprite.svg#plus-icon"></use>
